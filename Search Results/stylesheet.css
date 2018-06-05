@@ -1,0 +1,60 @@
+/* Whole Page */
+html
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: rgb(58, 58, 58);
+}
+/* Whole Page End */
+
+
+/* Header */
+#logo
+{
+	height: 4.25rem;
+	width: 9.375rem;
+    margin: -6rem 1rem 0 6rem;
+	float: left;
+	padding-right: 90%;
+}
+hr
+{
+	width: 81%;
+	margin-top: -2rem;
+}
+/* Header End */
+
+/* Body */
+table
+{
+	margin: auto;	
+}
+td
+{
+	width: 25%;
+	font-weight: 700;
+}
+img
+{
+	height: 10rem;
+	width: 9rem;
+	padding: 1rem 0 1rem 2rem;
+}
+h4
+{
+	font-weight: 200;
+	text-transform: uppercase;
+}
+h2
+{
+	background-color: rgb(230, 230, 230);
+	text-align: right;
+	padding-right: 1rem;
+	height: 4rem;
+}
+sub
+{
+	font-size: 0.875rem;
+	float: right;
+}
+/* Body End */
