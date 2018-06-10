@@ -1,44 +1,36 @@
-/* Whole Page */
 html
 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
 	color: rgb(58, 58, 58);
 }
-/* Whole Page End */
 
-
-/* Header */
 #logo
 {
 	height: 4.25rem;
 	width: 9.375rem;
-    margin: -6rem 1rem 0 6rem;
-	float: left;
-	padding-right: 90%;
+	margin: -4rem 0rem 0rem 2rem;
 }
-hr
-{
-	width: 81%;
-	margin-top: -2rem;
-}
-/* Header End */
 
-/* Body */
-table
+.flex-container
 {
-	margin: auto;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-left: 1rem;
 }
-td
+.flex-item
 {
+	margin: 1rem;
 	width: 25%;
-	font-weight: 700;
 }
 img
 {
 	height: 10rem;
 	width: 9rem;
-	padding: 1rem 0 1rem 2rem;
+	padding-bottom: 1rem;
+	margin-left: 2rem;
 }
 h4
 {
@@ -57,4 +49,3 @@ sub
 	font-size: 0.875rem;
 	float: right;
 }
-/* Body End */

@@ -9,78 +9,65 @@
 		<img id="logo" src="images/parts_unlimited_logo.svg" alt="Parts Unlimited Logo">
 		<title>Parts Unlimited</title>
 	</head>
-	<body>
-		<input id="searchField" placeholder="     Enter search terms or part number...">
-		<button id="searchButton"><i class="fa fa-search"></i>  Search</button>
+	<body >
+		<input id="searchField" placeholder="      Enter search terms or part number...">
+		<button id="searchButton"><i class="fa fa-search"></i>Search</button>
 		
-		<div id="dropdown-menu">
+		<div id="dropdown-menu" class="flex-container">
 			<ul id="navBar">
-				<li>Riding Gear</li>
-				<li>Street</li>
-				<li>Helmets</li>
-				<li>Offroad</li>
-				<li>Watercraft</li>
-				<li>Tires</li>
-				<li>Snow</li>
-				<li id="last-child">American V-Twin</li>
+				<li class="flex-item">Riding Gear</li>
+				<li class="flex-item">Street</li>
+				<li class="flex-item">Helmets</li>
+				<li class="flex-item">Offroad</li>
+				<li class="flex-item">Watercraft</li>
+				<li class="flex-item">Tires</li>
+				<li class="flex-item">Snow</li>
+				<li class="flex-item">American V-Twin</li>
 			</ul>
+			
 			<div id="dropdown-content">
+				<h5 id="featuredLabel">Featured Street Categories</h5>
 				<ul id="featured">
-				<h5>Featured Street Categories</h5>
-					<li><a href="apparel.html">Apparel</a></li>
-					<li><a href="braking.html">Braking</a></li>
-					<li><a href="cables.html">Cables</a></li></li>
-					<li><a href="chemicals-lubes.html">Chemicals & Lubricants</a></li>
-					<li><a href="drivetrain.html">Drivetrain</a></li>
-					<li><a href="electrical-lighting.html">Electrical & Lighting</a></li>
+					<li class="flex-item"><a href="apparel.html">Apparel</a></li>
+					<li class="flex-item"><a href="braking.html">Braking</a></li>
+					<li class="flex-item"><a href="cables.html">Cables</a></li></li>
+					<li class="flex-item"><a href="chemicals-lubes.html">Chemicals & Lubricants</a></li>
+					<li class="flex-item"><a href="drivetrain.html">Drivetrain</a></li>
+					<li class="flex-item"><a href="electrical-lighting.html">Electrical & Lighting</a></li>
 				</ul>
 				<h5 id="allStreetLabel">All Street Categories</h5>
-				<table id="allCategories">
-					<tr>
-						<td><a href="apparel.html">Apparel</a></td>
-						<td><a href="exhaust.html">Exhaust</a></td>
-						<td><a href="handlebars-controls.html">Handlebars & Controls</a></td>
-						<td><a href="suspension.html">Suspension</a></td>
-					</tr>
-					<tr>
-						<td><a href="braking.html">Braking</a></td>
-						<td><a href="fairings-windscreens.html">Fairings & Windscreens</a></td>
-						<td><a href="helmets.html">Helmets</a></td>
-						<td><a href="tools-equiptment-hardware.html">Tools, Equiptment, & Hardware</a></td>
-					</tr>
-					<tr>
-						<td><a href="cables.html">Cables</a></td>
-						<td><a href="fenders-dash.html">Fenders & Dash</a></td>
-						<td><a href="luggage.html">Luggage</a></td>
-						<td><a href="transporation-security.html">Transportation & Security</a></td>
-					</tr>
-					<tr>
-						<td><a href="chemicals-lubes.html">Chemicals & Lubricants</a></td>
-						<td><a href="footRests-controls.html">Foot Rests & Controls</a></td>
-						<td><a href="mirrors.html">Mirrors</a></td>
-						<td><a href="tuning.html">Tuning</a></td>
-					</tr>
-					<tr>
-						<td><a href="drivetrain.html">Drivetrain</a></td>
-						<td><a href="footwear.html">Footwear</a></td>
-						<td><a href="protection.html">Protection</a></td>
-						<td><a href="utility-accessories.html">Utility & Accessories</a></td>
-					</tr>
-					<tr>
-						<td><a href="electrical-lighting.html">Electrical & Lighting</a></td>
-						<td><a href="frame.html">Frame & Body</a></td>
-						<td><a href="reference-merchandising.html">Reference & Merchandising</a></td>
-						<td><a href="wheels-tires.html">Wheels & Tires</a></td>
-					</tr>
-					<tr>
-						<td><a href="engine.html">Engine</a></td>
-						<td style="width: 22%;"><a href="fuel-lubes-cooling.html">Fuel, Lubrication, & Cooling Systems</a></td>
-						<td><a href="seats.html">Seats</a></td>
-					</tr>
-				</table>
+				<ul id="allCategories">
+					<li class="flex-item"><a href="apparel.html">Apparel</a></li>
+					<li class="flex-item"><a href="exhaust.html">Exhaust</a></li>
+					<li class="flex-item"><a href="handlebars-controls.html">Handlebars & Controls</a></li>
+					<li class="flex-item"><a href="suspension.html">Suspension</a></li>
+					<li class="flex-item"><a href="braking.html">Braking</a></li>
+					<li class="flex-item"><a href="fairings-windscreens.html">Fairings & Windscreens</a></li>
+					<li class="flex-item"><a href="helmets.html">Helmets</a></li>
+					<li class="flex-item"><a href="tools-equiptment-hardware.html">Tools, Equiptment, & Hardware</a></li>
+					<li class="flex-item"><a href="cables.html">Cables</a></li>
+					<li class="flex-item"><a href="fenders-dash.html">Fenders & Dash</a></li>
+					<li class="flex-item"><a href="luggage.html">Luggage</a></li>
+					<li class="flex-item"><a href="transporation-security.html">Transportation & Security</a></li>
+					<li class="flex-item"><a href="chemicals-lubes.html">Chemicals & Lubricants</a></li>
+					<li class="flex-item"><a href="footRests-controls.html">Foot Rests & Controls</a></li>
+					<li class="flex-item"><a href="mirrors.html">Mirrors</a></li>
+					<li class="flex-item"><a href="tuning.html">Tuning</a></li>
+					<li class="flex-item"><a href="drivetrain.html">Drivetrain</a></li>
+					<li class="flex-item"><a href="footwear.html">Footwear</a></li>
+					<li class="flex-item"><a href="protection.html">Protection</a></li>
+					<li class="flex-item"><a href="utility-accessories.html">Utility & Accessories</a></li>
+					<li class="flex-item"><a href="electrical-lighting.html">Electrical & Lighting</a></li>
+					<li class="flex-item"><a href="frame.html">Frame & Body</a></li>
+					<li class="flex-item"><a href="reference-merchandising.html">Reference & Merchandising</a></li>
+					<li class="flex-item"><a href="wheels-tires.html">Wheels & Tires</a></li>
+					<li class="flex-item"><a href="engine.html">Engine</a></li>
+					<li class="flex-item"><a href="fuel-lubes-cooling.html">Fuel, Lubrication, & Cooling Systems</a></li>
+					<li class="flex-item"><a href="seats.html">Seats</a></li>
+				</ul>
 			</div>
 		</div>
-			
+		
 		<img id="helmetImg" src="images/georacer.png" alt="georacer Helmet">
 		<div id="helmetGeneralInfo">
 			<h2 id="iconLabel">Icon</h2>
@@ -105,30 +92,30 @@
 		</div>
 		<form id="findDealerAside">
 			<h4 id="findDealerLabel">Find a Dealer:</h4>
-			<input type="text" id="findDealerSearchBox" placeholder="    Enter Zip Code or City">
+			<input type="text" id="findDealerSearchBox" maxlength="5" placeholder="    Enter Zip Code or City">
 			<button id="findDealerButton">Search</button>
 		</form>
-		<h3 id="specsLabel">Specs</h3>
-			<ul id="helmetSpecsLeft">			
-				<li><span>Product Name:</span> Helmet</li>
-				<li><span>Model:</span> Airmada</li>
-				<li><span>Graphic:</span> Georacer</li>
-				<li><span>Color/Finish:</span> Black, Blue, Purple, Red, Yellow</li>
-				<li><span>Featured Color:</span> Purple</li>
-				<li><span>Type:</span> Full Face, Street</li>
-				<li><span>Shell Material:</span> Polycarbonate</li>
-			</ul>
-			<ul id="helmetSpecsRight">
-				<li><span>Gender/Age:</span> Men's, Women's</li>
-				<li><span>Features:</span> Anti-Fog, Moisture Wicking, Removable Cheek Pads, Removable Liner, Tear Off Compatible, Vented</li>
-				<li><span>Communicator Compatibility:</span> Compatible</li>
-				<li><span>Peak/Visor Compatibility:</span> Not Compatible</li>
-				<li><span>Units:</span> Each</li>
-			</ul>
+		
 		<div id="catalogsBox">
 			<h3>Catalogs</h3>
 				<div>2018 Helmet & Apparel - <a href="catalog.html" id="catalogLink">Page 26</a></div>
 		</div>
+		
+		<h3 id="specsLabel">Specs</h3>	
+		<ul id="helmetSpecs" class="flex-container">
+			<li class="flex-item"><span>Product Name:</span> Helmet</li>
+			<li class="flex-item"><span>Gender/Age:</span> Men's, Women's</li>
+			<li class="flex-item"><span>Model:</span> Airmada</li>
+			<li class="flex-item"><span>Features:</span> Anti-Fog, Moisture Wicking, Removable Cheek Pads, Removable Liner, Tear Off Compatible, Vented</li>
+			<li class="flex-item"><span>Graphic:</span> Georacer</li>
+			<li class="flex-item"><span>Communicator Compatibility:</span> Compatible</li>
+			<li class="flex-item"><span>Color/Finish:</span> Black, Blue, Purple, Red, Yellow</li>
+			<li class="flex-item"><span>Peak/Visor Compatibility:</span> Not Compatible</li>
+			<li class="flex-item"><span>Featured Color:</span> Purple</li>
+			<li class="flex-item"><span>Units:</span> Each</li>
+			<li class="flex-item"><span>Type:</span> Full Face, Street</li>
+			<li class="flex-item"><span>Shell Material:</span> Polycarbonate</li>
+		</ul>
 			
 		<h3 id="partNumberLabel">Part Numbers</h3>
 		<table id="helmetSizes">
@@ -176,72 +163,45 @@
 			</tr>
 		</table>
 		
-		<table id="bottomLinks">
-			<tr>
-				<th>Parts Unlimited<hr></th>
-				<th>Brand Sites<hr></th>
-				<th>Catalogs<hr></th>
-			</tr>
-			<tr>
-				<td><i class="fa fa-lock"></i>   <a href="dealerLogin.html">Dealer Login</a></td>
-				<td><a href="ams.html">AMS</a></td>
-				<td><a href="ams.html">2018 ATV & UTV</a></td>
-			</tr>
-			<tr>
-				<td><a href="dragSpecialties.html">Drag Specialties</a></td>
-				<td><a href="arctiva.html">Arctiva</a></td>
-				<td><a href="arctiva.html">2018 Helmet & Apparal</a></td>
-			</tr>
-			<tr>
-				<td><a href="partsCanada.html">Parts Canada</a></td>
-				<td><a href="icon.html">Icon</a></td>
-				<td><a href="icon.html">2017 Mid Year Update</a></td>					
-			</tr>
-			<tr>
-				<td><a href="partsEurope.html">Parts Europe</a></td>
-				<td><a href="mooseRacing.html">Moose Racing</a></td>
-				<td><a href="mooseRacing.html">2018 Offroad</a></td>
-			</tr>
-			<tr>
-				<td><a href="about.html">About</a></td>
-				<td><a href="mooseUtilities.html">Moose Utilities</a></td>
-				<td><a href="mooseUtilities.html">2018 Snow</a></td>
-			</tr>
-			<tr>
-				<td><a href="jobs.html">Jobs</a></td>
-				<td><a href="pythonPerformance.html">Python Performance</a></td>
-				<td><a href="pythonPerformance.html">2018 Street</a></td>
-			</tr>
-			<tr>
-				<td><a href="facebook.html">Facebook</a></td>
-				<td><a href="slipperyWetsuits.html">Slippery Wetsuits</a></td>
-				<td><a href="slipperyWetsuits.html">2018 Tire</a></td>
-			</tr>
-			<tr>
-				<td><a href="micTireGuide.html">Mic Tire Guide</a></td>
-				<td><a href="thor.html">Thor</a></td>
-				<td><a href="thor.html">2018 Victory/Indian</a></td>
-			</tr>
-			<tr>
-				<td><a href="emissions.html">Emissions Notice</a></td>
-				<td><a href="z1r.html">Z1R</a></td>
-				<td><a href="z1r.html">2018 Watercraft</a></td>
-			</tr>
-			<tr>
-				<td><a href="conformity.html">Conformity Certifications</a></td>
-			</tr>
-			<tr>
-				<td><a href="safetyLegalInfo.html">Important Safety, Fitment, and Legal Information</a></td>
-			</tr>
-			<tr>
-				<td><a href="termsConditions.html">Terms and Conditions</a></td>
-			</tr>
-		</table>
+		<ul id="bottomLinks" class="flex-container">
+			<li class="flex-item">Parts Unlimited<hr></li>
+			<li class="flex-item">Brand Sites<hr></li>
+			<li class="flex-item">Catalogs<hr></li>
+			<li class="flex-item"><i class="fa fa-lock"></i><a href="dealerLogin.html">Dealer Login</a></li>
+			<li class="flex-item"><a href="ams.html">AMS</a></li>
+			<li class="flex-item"><a href="atv-utv.html">2018 ATV & UTV</a></li>
+			<li class="flex-item"><a href="dragSpecialties.html">Drag Specialties</a></li>
+			<li class="flex-item"><a href="arctiva.html">Arctiva</a></li>
+			<li class="flex-item"><a href="2018-helmet-apparel.html">2018 Helmet & Apparel</a></li>
+			<li class="flex-item"><a href="partsCanada.html">Parts Canada</a></li>
+			<li class="flex-item"><a href="icon.html">Icon</a></li>
+			<li class="flex-item"><a href="2017_midYearUpdate.html">2017 Mid Year Update</a></li>					
+			<li class="flex-item"><a href="partsEurope.html">Parts Europe</a></li>
+			<li class="flex-item"><a href="mooseRacing.html">Moose Racing</a></li>
+			<li class="flex-item"><a href="2018_offroad.html">2018 Offroad</a></li>
+			<li class="flex-item"><a href="about.html">About</a></li>
+			<li class="flex-item"><a href="mooseUtilities.html">Moose Utilities</a></li>
+			<li class="flex-item"><a href="2018_snow.html">2018 Snow</a></li>
+			<li class="flex-item"><a href="jobs.html">Jobs</a></li>
+			<li class="flex-item"><a href="pythonPerformance.html">Python Performance</a></li>
+			<li class="flex-item"><a href="2018_street.html">2018 Street</a></li>
+			<li class="flex-item"><a href="facebook.html">Facebook</a></li>
+			<li class="flex-item"><a href="slipperyWetsuits.html">Slippery Wetsuits</a></li>
+			<li class="flex-item"><a href="2018_tire.html">2018 Tire</a></li>
+			<li class="flex-item"><a href="micTireGuide.html">Mic Tire Guide</a></li>
+			<li class="flex-item"><a href="thor.html">Thor</a></li>
+			<li class="flex-item"><a href="victory-indian.html">2018 Victory/Indian</a></li>
+			<li class="flex-item"><a href="emissions.html">Emissions Notice</a></li>
+			<li class="flex-item"><a href="z1r.html">Z1R</a></li>
+			<li class="flex-item"><a href="watercraft.html">2018 Watercraft</a></li>
+			<li><a href="conformity.html">Conformity Certifications</a></li>
+			<li><a href="safetyLegalInfo.html">Important Safety, Fitment, and Legal Information</a></li>
+			<li><a href="termsConditions.html">Terms and Conditions</a></li>
+		</ul>
 	</body>
 	
 	<footer>
 		<img id="logo" src="images/parts_unlimited_logo.svg" alt="Parts Unlimited Logo">
 		<h4>&copy; Copyright 2018 - LeMans Corporation. All rights reserved.</h4>
 	</footer>
-	
 </html>

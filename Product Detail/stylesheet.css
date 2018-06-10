@@ -5,6 +5,7 @@ html
 	font-weight: 400;
 	color: rgb(58, 58, 58);
 	overflow-x: hidden;
+	flex-wrap: wrap;
 }
 body
 {
@@ -14,19 +15,14 @@ h3
 {
 	margin-left: 4rem;
 }
-span
-{
-	font-weight: 700;
-}
 sub
 {
 	font-size: 0.75rem;
 	margin-left: 1rem;
 }
-hr
+span
 {
-	width: 85%;
-    margin-right: 10rem;
+	font-weight: 700;
 }
 /* Whole Page End */
 
@@ -50,36 +46,28 @@ hr
 	background-color: rgb(100, 145, 191);
 	border: 2px solid rgb(100, 145, 191);
 	color: rgb(255, 255, 255);
-	font-weight: bold;
+	font-weight: 700;
 	height: 2.4rem;
 	padding: 0 1rem;
 }
 /* Header End */
 
-
-/* Main Navigation Bar */
+/* Navigation Menu */
 #navBar
 {
 	background-color: rgb(15, 85, 156);
-	color: rgb(255, 255, 255);
-	font-weight: bold;
-	padding: 0.25rem 0 0.25rem 0;
-	margin-bottom: -0.5rem;
+	margin: 0;
 }
 #navBar li
 {
-	display: inline;
-	border-left: 1.5px solid rgb(17, 106, 197);
-	padding: 0.25rem 2rem 0.25rem 2rem;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	border-right: 1px solid rgb(17, 106, 197);
+	padding: 0.5rem 1.5rem;
 }
 #navBar li:first-child
 {
-	margin-left: 4rem;
-}
-#navBar #last-child
-{
-	padding-right: 1.3rem;
-	border-right: 2px solid rgb(17, 106, 197);
+	border-left: 1px solid rgb(17, 106, 197);
 }
 #navBar li:hover
 {
@@ -88,50 +76,61 @@ hr
 #dropdown-content
 {
 	display: none;
+	margin-left: 4rem;
 }
 #dropdown-menu:hover #dropdown-content
 {
 	display: block;
+	height: 24rem;
 }
-/* Navigation Bar End */
-
-/* Navigation Drop Down Menu */
+#dropdown-menu ul
+{
+	margin-left: 0;
+    clear: both;
+    padding-left: 4rem;
+}
+#dropdown-menu .flex-item, #featured .flex-item, #allCategories .flex-item
+{
+	display: inline-flex;
+}
+#featuredLabel, #featured
+{
+	background-color: rgb(208, 23, 28);
+	width: 80%;
+}
 #featured
 {
 	margin: 0;
-	width: 83%;
+	padding: 0 2rem 0 0;
 }
 #featured li
 {
-	display: inline;
+	font-weight: 700;
+	margin-left: -2rem;
+	padding: 0.5rem 1rem;
+}
+#featured li:first-child
+{
+	padding-left: 1rem;
 }
 #featured a
 {
-	font-weight: 700;
-	padding-right: 6rem;
-	color: rgb(58, 58, 58);
-}
-#featured, #featured a
-{
-	background-color: rgb(208, 23, 28);
 	color: rgb(255, 255, 255);
 	text-decoration: none;
+	padding-right: 3rem;
 }
-#featured h5
+#featuredLabel
 {
+	color: rgb(255, 255, 255);
 	font-weight: 400;
-	margin: 0.5rem 0 0.5rem 0;
-	padding-top: 0.5rem;
-}
-#featured, #allCategories
-{
-	margin-left: 4rem;
-	padding: 0 0 0.5rem 2rem;
+	margin: 0;
+	padding: 1rem 0 0 3rem;
+	width: 83.75%;
 }
 #allStreetLabel
 {
 	font-weight: 400;
-	padding: 1rem 0 0 6rem;
+	padding: 1rem 0 0 3rem; 
 	width: 20%;
     margin: 0;
 	position: absolute;
@@ -139,13 +138,25 @@ hr
 }
 #allCategories
 {
-    padding: 2.5rem 0 2rem 2rem;
-    box-shadow: 0 0 1.25rem 0.25rem rgb(225, 225, 225);
-	width: 85.25%;
+	margin: 0;
+	box-shadow: 0 0 1.25rem rgb(225, 225, 225);
 	position: absolute;
 	background-color: rgb(255, 255, 255);
-	top: 12rem;
-	z-index: -1;
+	z-index: 0;
+	display: inline;
+	width: 78.5%;
+	padding: 0 0 1rem 1.75rem;
+}
+#allCategories li
+{
+	width: 23%;
+	margin: 0.25rem 0.25rem 0.25rem -1rem;
+	z-index: 1;
+	padding-right: 1.5rem;
+}
+#allCategories li:first-child
+{
+	margin-top: 3rem;
 }
 #allCategories a
 {
@@ -157,36 +168,172 @@ hr
 {
 	color: rgb(15, 85, 156);
 }
-/* Navigation Drop Down Menu End */
+/* Navigation Menu End */
 
-
-/* Main Body */
+/* Body */
 #helmetImg
 {
-	margin: 4rem 4rem 2rem 16rem;
+	margin: 4rem 4rem 0 14rem;
 	float: left;
+}
+#helmetGeneralInfo
+{
+	margin-left: 45rem;
+	text-align: left;
+}
+#helmetGeneralInfo h1
+{
+	margin: 0 0 1rem 2rem;
+	width: 50%;
+	font-weight: 900;
+}
+#helmetGeneralInfo #iconLabel
+{
+	text-transform: uppercase;
+	font-weight: 200;
+	padding: 2rem 0 0 2rem;
+	margin-bottom: 0;
+}
+#helmetPriceTag
+{
+	width: 20%;
+	float: left;
+	background-color: rgb(225, 225, 225);
+	margin-left: 4rem;
+}
+#helmetPriceTag h1
+{
+	padding-left: 2rem;
+	margin: 0.5rem 0;
+}
+#sizeSelector select
+{
+	height: 2rem;
+	width: 20%;
+	float: left;
+	font-weight: 700;
+	padding-left: 0.5rem;
+	margin-left: 4rem;
+}
+#sizeSelector h3
+{
+	padding: 1rem;
+	border-radius: 0.5rem;
+	position: relative;
+}
+#sizeSelector h5
+{
+	width: 30%;
+	float: left;
+    margin: 1rem 0 0.5rem 4rem;
+}
+#findDealerAside
+{
+	padding: 0 0 1rem 1rem;
+	background-color: rgb(15, 85, 156);
+	width: 19%;
+	float: left;
+	margin-left: 4rem;
+}
+#findDealerLabel
+{
+	color: rgb(255, 255, 255);
+	margin: 0.5rem 0 0 0;
+	font-weight: 700;
+}
+#findDealerSearchBox
+{
+	height: 2rem;
+	width: 68%;
+	font-weight: 700;
+}
+#findDealerButton
+{
+	height: 2.5rem;
+	width: 4rem;
+	background-color: rgb(103, 128, 153);
+	border: 2px solid rgb(15, 85, 156);    
+	color: rgb(140, 165, 190);
+	font-weight: 700;
+	margin: 0;
+}
+#genInfoPartNumberBox
+{
+	height: 3rem;
+	width: 20%;
+	margin: 1rem 8rem 1rem 4rem;
+	border: 1px solid rgb(221, 221, 221);
+	float: left;
+}
+#genInfoPartNumberBox h5
+{
+	margin: 0.8rem 0 0 0.5rem;
+	font-weight: 400;
+}
+#genInfoPartNumberBox span
+{
+	padding-left: 0.5rem;
+}
+#catalogsBox
+{
+	border: 1px solid rgb(236, 237, 236);
+	width: 20%;
+	float: right;
+	padding: 0 0 1rem 2rem;
+	margin: 2rem 12rem 1rem 0;
+	height: 6rem;
+}
+#catalogsBox h3
+{
+	padding-left: 0;
+	margin: 1.5rem 0 0.5rem 0;
+}
+#catalogLink
+{
+	background-color: rgb(255, 255, 255);
+	color: rgb(119, 174, 232);
+	text-decoration: underline;
+	font-weight: 400;
+}
+#partNumberLabel
+{
+	float: left;
+	width: 100%;
 }
 #specsLabel
 {
-    width: 70%;
+	margin-bottom: 0;
 	float: left;
-	margin-top: 0;
+	width: 50%;
 }
-#helmetSpecsLeft
+#helmetSpecs
 {
-	width: 25%;
-	margin: 0 0 2rem 3rem;
+	margin-left: 4rem;
+	width: 50%;
+}
+#helmetSpecs li
+{
+	margin: 0 1rem 0 0;
+	width: 48%;
+}
+#helmetSpecs li:nth-child(even)
+{
+	float: right;
+}
+#helmetSpecs li:nth-child(2), #helmetSpecs li:nth-child(4)
+{
+	margin-top: -2rem;
+}
+#helmetSpecs li:nth-child(12)
+{
 	float: left;
+	margin-top: -1rem;
 }
-#helmetSpecsRight
+#partNumberLabel
 {
-	width: 30%;
-	margin: 0 0 2rem 0rem;
 	float: left;
-}
-#helmetSpecsRight li
-{
-	width: 80%;
+	width: 100%;
+	margin-top: 2rem;
 }
 #helmetSizes
 {
@@ -230,182 +377,57 @@ hr
 	border-top: 1px solid rgb(216, 216, 216);
 	border-bottom: 1px solid rgb(216, 216, 216);
 }
-#helmetGeneralInfo
+#bottomLinks
 {
-	margin-left: 50%;
-	text-align: left;
-}
-#helmetGeneralInfo h1
-{
-	margin: 0 0 1rem 8rem;
-	width: 50%;
-	font-weight: 900;
-}
-#helmetGeneralInfo #iconLabel
-{
-	text-transform: uppercase;
-	font-weight: 200;
-	padding: 2rem 0 0 8rem;
-	margin-bottom: 0;
-}
-#helmetPriceTag
-{
-	width: 20%;
-	float: left;
-	background-color: rgb(225, 225, 225);
-	margin-left: 5rem;
-}
-#helmetPriceTag h1
-{
-	padding-left: 2rem;
-	margin: 0.5rem 0;
-}
-#sizeSelector select
-{
-	height: 2rem;
-	width: 20%;
-	margin-left: 5rem;
-	float: left;
-	font-weight: 700;
-	padding-left: 0.5rem;
-}
-#sizeSelector h3
-{
-	padding: 1rem;
-	border-radius: 0.5rem;
-	position: relative;
-}
-#sizeSelector h5
-{
-	width: 30%;
-	float: left;
-    margin: 1rem 0 0.5rem 5rem;
-}
-#findDealerAside
-{
-	padding: 0 0 1rem 1rem;
 	background-color: rgb(15, 85, 156);
-	width: 19%;
-	float: left;
-	margin-left: 5rem;
+	padding: 0.5rem 0 1rem 4rem;
+	flex-wrap: wrap;
 }
-#findDealerLabel
+#bottomLinks.flex-container
+{
+	margin: 0;
+	display: inline-flex;
+}
+#bottomLinks li 
+{
+	list-style-type: none;
+	width: 30%;
+}
+#bottomLinks a
 {
 	color: rgb(255, 255, 255);
-	margin: 0.5rem 0 0 0;
+}
+#bottomLinks .flex-item
+{
+	margin: 0.25rem;
+	color: rgb(255, 255, 255);
+	width: 30%;
+	padding-right: 1rem;
+}
+#bottomLinks li:nth-child(31), #bottomLinks li:nth-child(32), #bottomLinks li:nth-child(33)
+{
+    width: 100%;
+    padding: 0.65rem 0 0 .25rem;
+}
+#bottomLinks .flex-item:first-child, #bottomLinks .flex-item:nth-child(2), #bottomLinks .flex-item:nth-child(3)
+{
+	font-size: 1.1rem;
 	font-weight: 700;
+	width: 30%;
+	padding-top: 0.5rem;
 }
-#findDealerSearchBox
-{
-	height: 2rem;
-	width: 68%;
-	font-weight: 700;
-}
-#findDealerButton
-{
-	height: 2.5rem;
-	width: 4rem;
-	background-color: rgb(103, 128, 153);
-	border: 2px solid rgb(15, 85, 156);    
-	color: rgb(140, 165, 190);
-	font-weight: bold;
-	margin: 0;
-}
-#genInfoPartNumberBox
-{
-	height: 3rem;
-	width: 20%;
-	margin: 1rem 8rem 1rem 5rem;
-	border: 1px solid rgb(221, 221, 221);
-	float: left;
-}
-#genInfoPartNumberBox h5
-{
-	margin: 0.8rem 0 0 0.5rem;
-	font-weight: 400;
-}
-#genInfoPartNumberBox span
-{
-	padding-left: 0.5rem;
-}
-#catalogsBox
-{
-	border: 1px solid rgb(236, 237, 236);
-	width: 20%;
-	float: right;
-	padding: 0 0 1rem 2rem;
-	margin: 0 10rem 1rem 0;
-	height: 6rem;
-}
-#catalogsBox h3
-{
-	padding-left: 0;
-	margin: 1.5rem 0 0.5rem 0;
-}
-#catalogLink
-{
-	background-color: rgb(255, 255, 255);
-	color: rgb(119, 174, 232);
-	text-decoration: underline;
-	font-weight: 400;
-}
-#partNumberLabel
-{
-	float: left;
-	width: 100%;
-}
-#helmetImg, #helmetGeneralInfo, #iconLabel, #helmetPriceTag, #sizeSelector h5, #genInfoPartNumberBox, #findDealerAside, 
-#specsLabel, #helmetSpecsLeft, #helmetSpecsRight,  #catalogsBox, #partNumberLabel, #helmetSizes, #bottomLinks, footer
+#helmetImg, #helmetGeneralInfo, #iconLabel, #helmetPriceTag, #sizeSelector h5, #genInfoPartNumberBox, 
+#specsLabel, #helmetSpecs, #catalogsBox, #partNumberLabel, #helmetSizes, #bottomLinks, footer
 {
 	position: relative;
 	z-index: -2;
 }
-/* Main Body End */
-
-
-/* Table Body */
-#bottomLinks
-{
-	width: 100%;
-	background-color: rgb(15, 85, 156);
-}
-#bottomLinks th
-{
-	font-size: 1.2rem;
-	color: rgb(255, 255, 255);
-	width: 33%;
-}
-#bottomLinks td
-{
-	font-size: 1rem;
-	width: 33%;
-	padding: 0.3125rem;
-}
-#bottomLinks a
-{
-	width: 25%;
-	font-weight: 400;
-	color: rgb(255, 255, 255);
-}
-#bottomLinks th, #bottomLinks td
-{
-	text-align: left;
-}
-#bottomLinks tr:first-child, #bottomLinks th:first-child, #bottomLinks td:first-child
-{
-	padding-left: 4rem;
-}
-#bottomLinks td:first-child
-{
-	width: 15%;
-	padding-right: 14rem;
-}
 .fa-lock:before
 {
 	color: rgb(255, 255, 255);
+	padding-right: 0.25rem;
 }
-/* Table Body End */
-
+/* Body End */
 
 /* Footer */
 footer
@@ -414,11 +436,11 @@ footer
 }
 footer h4
 {
-	background-color: rgb(255, 255, 255);
 	margin-left: 4rem;
-	float: left;
+	background-color: rgb(255, 255, 255);
 	color: rgb(143, 143, 143);
 	font-weight: 400;
+	float:left;
 	width: 100%;
 }
 /* Footer End */
