@@ -1,0 +1,115 @@
+#navBar
+{
+	background-color: rgb(15, 85, 156);
+	margin: 0;
+}
+#navBar li
+{
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	border-right: 1px solid rgb(17, 106, 197);
+	padding: 0.5rem 1.5rem;
+}
+#navBar li:first-child
+{
+	border-left: 1px solid rgb(17, 106, 197);
+}
+#navBar li:hover
+{
+	background-color: rgb(208, 23, 28);
+}
+#dropdown-content
+{
+	display: none;
+	margin-left: 4rem;
+}
+#dropdown-menu:hover #dropdown-content
+{
+	display: block;
+	height: 24rem;
+}
+#dropdown-menu ul
+{
+	margin-left: 0;
+    clear: both;
+    padding-left: 4rem;
+}
+#dropdown-menu .flex-item, #featured .flex-item, #allCategories .flex-item
+{
+	display: inline-flex;
+}
+#featuredLabel, #featured
+{
+	background-color: rgb(208, 23, 28);
+	width: 80%;
+}
+#featured
+{
+	margin: 0;
+	padding: 0 2rem 0 0;
+}
+#featured li
+{
+	font-weight: 700;
+	margin-left: -2rem;
+	padding: 0.5rem 1rem;
+}
+#featured li:first-child
+{
+	padding-left: 1rem;
+}
+#featured a
+{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding-right: 3rem;
+}
+#featuredLabel
+{
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	margin: 0;
+	padding: 1rem 0 0 3rem;
+	width: 83.75%;
+}
+#allStreetLabel
+{
+	font-weight: 400;
+	padding: 1rem 0 0 3rem; 
+	width: 20%;
+    margin: 0;
+	position: absolute;
+	z-index: 1;
+}
+#allCategories
+{
+	margin: 0;
+	box-shadow: 0 0 1.25rem rgb(225, 225, 225);
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	z-index: 0;
+	display: inline;
+	width: 78.5%;
+	padding: 0 0 1rem 1.75rem;
+}
+#allCategories li
+{
+	width: 23%;
+	margin: 0.25rem 0.25rem 0.25rem -1rem;
+	z-index: 1;
+	padding-right: 1.5rem;
+}
+#allCategories li:first-child
+{
+	margin-top: 3rem;
+}
+#allCategories a
+{
+	font-weight: 700;
+	color: rgb(58, 58, 58);
+	text-decoration: none;
+}
+#allCategories a:hover
+{
+	color: rgb(15, 85, 156);
+}

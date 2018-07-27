@@ -1,0 +1,22 @@
+#logo
+{
+	height: 4.25rem;
+	width: 9.375rem;
+	margin: 1rem 1rem 0 4rem;
+	float: left;
+}
+#searchField
+{
+	width: 30%;
+	margin: 2rem 0 0.5rem 0.5rem;
+	height: 2rem;
+}
+#searchButton
+{
+	background-color: rgb(100, 145, 191);
+	border: 2px solid rgb(100, 145, 191);
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	height: 2.4rem;
+	padding: 0 1rem;
+}
